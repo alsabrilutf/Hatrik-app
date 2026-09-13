@@ -23,6 +23,9 @@ jobs:
           flutter-version: '3.x'
           channel: 'stable'
 
+      - name: Generate Flutter project platform files
+        run: flutter create . --platforms=android --project-name hatrik_academy --overwrite
+
       - name: Install dependencies
         run: flutter pub get
 
